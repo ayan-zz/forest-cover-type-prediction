@@ -1,4 +1,13 @@
 pandas
 numpy
 seaborn
--e .
+matplotlib
+scikit-learn
+sklearn
+statistics
+dill
+xgboost
+flask
+cassandra-driver
+touch
+#-e .

@@ -1,0 +1,217 @@
+<html>
+<body>
+    <div class="login">
+       <h1>Forest Cover Type Indicator</h1>
+       
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <h1>
+            <legend>Forest Cover Prediction</legend>
+        </h1>
+        <div class="mb-3">
+            <label class="form-label">Id</label>
+            <input class="form-control" type="number" name="Id" placeholder="Enter Id" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Elevation</label>
+            <input class="form-control" type="number" name="Elevation"
+             placeholder="Enter the Elevation" min='0' max='10000' />
+        </div>
+        <div class="mb-3">
+            <label class="Slope ">Slope</label>
+            <input class="form-control" type= "number" name="Slope"
+            placeholder="Enter the slope of land" min='0' max='90'/>
+        </div>
+        <div class="mb-3">
+            <label class ="Aspect">Aspect</label>
+            <input class="Aspect" type ="number" name="Aspect"
+            placeholder="Enter the aspect" />
+        </div>
+        <div class ="mb-3">
+            <label class="Horizontal_Distance_To_Hydrology">Horizontal_Distance_To_Hydrology</label>
+            <input class="form-control" type="number" name="Horizontal_Distance_To_Hydrology"
+            placeholder="Enter Horizontal Distance To Hydrology" min='1' max='5000' />
+        </div>
+        <div class ="mb-3">
+        <label class ="Vertical_Distance_To_Hydrology">Vertical_Distance_To_Hydrology</label>
+        <input class="form-control" type ="number" name="Vertical_Distance_To_Hydrology"
+        placeholder="Enter Vertical Distance To Hydrology" min="1" max="1000"/>
+        </div>
+        <div class="mb-3">
+        <label class="Horizontal_Distance_To_Roadways">Horizontal_Distance_To_Roadways</label>
+        <input class="form-control" type="number"  name="Horizontal_Distance_To_Roadways"
+        placeholder="Enter Horizontal Distance To Roadways" min="0"max="10000"/>
+        </div>
+        <div class="mb-3">
+        <label class="Hillshade_9am">Hillshade_9am</label>
+        <input class="form-control" type="number" name="Hillshade_9am"
+        placeholder="Enter Hillshade 9am" min="0" max="500"/>
+        </div>
+        <div class="mb-3">
+        <label class="Hillshade_Noon">Hillshade_Noon</label>
+        <input class="Hillshade_Noon" type="number" name="Hillshade_Noon"
+        placeholder="Enter Hillshade Noon" min="0" max="500"/>
+        </div>
+        <div class="mb-3">
+        <label class="Hillshade_3pm">Hillshade_3pm</label>
+        <input class="Hillshade_3pm" type="number" name="Hillshade_3pm"
+        placeholder="Enter Hillshade 3pm" min="0" max="500"/>
+        </div>
+        <div class="mb-3">
+        <label class="Horizontal_Distance_To_Fire_Points">Horizontal_Distance_To_Fire_Points</label>
+        <input class="Horizontal_Distance_To_Fire_Points" type="number" name="Horizontal_Distance_To_Fire_Points"
+        placeholder="Enter Horizontal Distance To Fire Points" min="0" max="10000"/>
+        </div>
+        <div class="mb-3">
+        <label class="form-label">Wilderness</label>
+        <select class="form-control" name="Wilderness" placeholder="Enter Wilderness Area" required>
+            <option class="placeholder" selected disabled value="">Select Wilderness</option>
+            <option value="Wilderness_Area1">
+                Rawah
+            </option>
+            <option value="Wilderness_Area2">
+                Neota
+            </option>
+            <option value="Wilderness_Area3">
+                Comanche Peak
+            </option>
+            <option value="Wilderness_Area4">
+                Cache la Poudre
+            </option>
+        </select>
+        </div>
+        <select class="form-control" name="Soil" placeholder="Enter Soil Type" required>
+            <option class="placeholder" selected disabled value="">Select Soil</option>
+            <option value="Soil_Type1">
+                Soil_Type1
+            </option>
+            <option value="Soil_Type2">
+                Soil_Type2
+            </option>
+            <option value="Soil_Type3">
+                Soil_Type3
+            </option>
+            <option value="Soil_Type4">
+                Soil_Type4
+            </option>
+            <option value="Soil_Type5">
+                Soil_Type5
+            </option>
+            <option value="Soil_Type6">
+                Soil_Type6
+            </option>
+            <option value="Soil_Type7">
+                Soil_Type7
+            </option>
+            <option value="Soil_Type8">
+                Soil_Type8
+            </option>
+            <option value="Soil_Type9">
+                Soil_Type9
+            </option>
+            <option value="Soil_Type10">
+                Soil_Type10
+            </option>
+            <option value="Soil_Type11">
+                Soil_Type11
+            </option>
+            <option value="Soil_Type12">
+                Soil_Type12
+            </option>
+            <option value="Soil_Type13">
+                Soil_Type13
+            </option>
+            <option value="Soil_Type14">
+                Soil_Type14
+            </option>
+            <option value="Soil_Type15">
+                Soil_Type15
+            </option>
+            <option value="Soil_Type16">
+                Soil_Type16
+            </option>
+            <option value="Soil_Type17">
+                Soil_Type17
+            </option>
+            <option value="Soil_Type18">
+                Soil_Type18
+            </option>
+            <option value="Soil_Type19">
+                Soil_Type19
+            </option>
+            <option value="Soil_Type20">
+                Soil_Type20
+            </option>
+            <option value="Soil_Type21">
+                Soil_Type21
+            </option>
+            <option value="Soil_Type22">
+                Soil_Type22
+            </option>
+            <option value="Soil_Type23">
+                Soil_Type23
+            </option>
+            <option value="Soil_Type24">
+                Soil_Type24
+            </option>
+            <option value="Soil_Type25">
+                Soil_Type25
+            </option>
+            <option value="Soil_Type26">
+                Soil_Type26
+            </option>
+            <option value="Soil_Type27">
+                Soil_Type27
+            </option>
+            <option value="Soil_Type28">
+                Soil_Type28
+            </option>
+            <option value="Soil_Type29">
+                Soil_Type29
+            </option>
+            <option value="Soil_Type30">
+                Soil_Type30
+            </option>
+            <option value="Soil_Type31">
+                Soil_Type31
+            </option>
+            <option value="Soil_Type32">
+                Soil_Type32
+            </option>
+            <option value="Soil_Type33">
+                Soil_Type33
+            </option>
+            <option value="Soil_Type34">
+                Soil_Type34
+            </option>
+            <option value="Soil_Type35">
+                Soil_Type35
+            </option>
+            <option value="Soil_Type36">
+                Soil_Type36
+            </option>
+            <option value="Soil_Type37">
+                Soil_Type37
+            </option>
+            <option value="Soil_Type38">
+                Soil_Type38
+            </option>
+            <option value="Soil_Type39">
+                Soil_Type39
+            </option>
+            <option value="Soil_Type40">
+                Soil_Type40
+            </option>
+        </select>
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict Cover Type" required />
+        </div>
+       </form>
+    </div>
+    <h2>
+        THE PREDICTION OF COVER TYPE IS {{results}}
+    </h2>
+</body>
+</html>
+
+            
+ 
