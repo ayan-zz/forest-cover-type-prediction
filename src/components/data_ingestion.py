@@ -23,7 +23,7 @@ class DataIngestion:
         logging.info("Initiate the data ingestion")
 
         try:
-            df=pd.read_csv("notebook/data/forest.csv")
+            df=pd.read_csv("notebook/data/data.csv")
             soil_dummy = df.loc[:,df.columns.str.startswith('Soil_Type')]
             wild_dummy=df.loc[:,df.columns.str.startswith('Wilderness_Area')]
             wild = wild_dummy.idxmax(axis=1)
