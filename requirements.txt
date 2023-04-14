@@ -10,9 +10,4 @@ xgboost
 flask
 cassandra-driver
 touch
-<<<<<<< HEAD
-
--e .
-=======
 #-e .
->>>>>>> d5ff2a265c8acc0e718fa03c22441024c02e31e5
